@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Basic Quiz</title>
+    <link rel="stylesheet" href="./Resources/style.css">
+</head>
+<body>
+    <div class="quiz-container" id="questions-container">
+        <div id="beggining" >
+            <h1>Algebra Quiz</h1>
+            <button class="begin-btn">Begin</button>
+        </div>
+        <div class="question" id="question1" hidden>
+            <h2>Question 1:</h2>
+            <p>Paul is two-thirds as old as Joe.  In seven years, Paul will be three-fourths as old as Joe. How old is each person now?</p>
+            <p>Paul is <input placeholder='0' class='text' type="text" id="q1" pattern="[0-9]"> years old and Joe is <input type="text" id="q1p2" class="text" placeholder='0' pattern="[0-9]"> years old</p>
+            <button id='btn-one' class="next-btn">Next</button>
+        </div>
+        <div class="question" id="question2" hidden>
+            <h2>Question 2:</h2>
+            <p>A man is three times as old as his son. Fourteen years from now he will only be twice as old as his son. Find their present ages.</p>
+            <p>The man is <input placeholder='0' class='text' type="text" id="q2"> and his son is <input placeholder='0' type="text" id="q2p2" class="text">.</p>
+            <button id='btn-two' class="next-btn">Next</button>
+        </div>
+        <div class="question" id="question3" hidden>
+            <h2>Question 3:</h2>
+            <p>Thirty-five coins in nickels and dimes are worth $2.45.  How many of each coin are there?</p>
+            <p>There are <input placeholder='0' class='text' type="text" id="q3"> nickels and <input placeholder='0' type="text" id="q3p2" class="text"> dimes.</p>
+            <button id='btn-three' class="next-btn">Next</button>
+        </div>
+        <div class="question" id="question4" hidden>
+            <h2>Question 4:</h2>
+            <p>Ramona has $4.32 in pennies and nickels.  If Ramona has a total of 260 coins, how many of each type of coin does he have?</p>
+            <p>Ramona has <input placeholder='0' class='text' type="text" id="q4"> nickels and <input placeholder='0' type="text" id="q4p2" class="text"> pennies.</p>
+            <button id='btn-four' class="next-btn">Next</button>
+        </div>
+        <div class="question" id="question5" hidden>
+            <h2>Question 5:</h2>
+            <p>A chemistry lab requires that Sam make 16oz an acid solution. His teacher provides the class with a 20% acid solution and a 60% acid solution. How many ounces of each must Sam use to mix 16 ounces of a 50% acid solution?</p>
+            <p>Sam needs to use <input placeholder='0' class='text' type="text" id="q5"> ounces of the 20% solution and <input placeholder='0' type="text" id="q5p2" class="text"> ounces of the 60% solution</p>
+            <button id='btn-five' class="next-btn">Next</button>
+        </div>
+        <div class="question" id="question6" hidden>
+            <h2>Question 6:</h2>
+            <p>Tom went to the grocery store to buy ingredients for trail mix he could sell to members of his hiking club. He mixed peanuts that cost $8.00 per pound with raisins that cost $5.00 a pound. How many pounds of peanuts and raisins did Tom use if he made 35 pounds of trail mix that he sold for $6.50 a bag?</p>
+            <p>Tom bought <input placeholder='0' class='text' type="text" id="q6"> pounds of peanuts and <input placeholder='0' type="text" id="q6p2" class="text"> pounds of raisins.</p>
+            <button id='btn-six' class="next-btn">Next</button>
+        </div>
+        <div class="question" id="question7" hidden>
+            <h2>Question 7:</h2>
+            <p>Mary has two babysitting jobs. When she works five hours at her first babysitting job and then 3 hours at her second babysitting job, she earns a total of $65. When she works 4 hours at her first babysitting job and 5 hours at her second babysitting job, she earns a total of $78. How much does each babysitting job pay?</p>
+            <p>Mary earns $ <input placeholder='0' class='text' type="text" id="q7"> per hour at her first babysitting job and $ <input placeholder='0' type="text" id="q7p2" class="text"> per hour at her second babysitting job.</p>
+            <button id='btn-seven' class="next-btn">Next</button>
+        </div>
+        <div class="question" id="question8" hidden>
+            <h2>Question 8:</h2>
+            <p>Iris works at the local bookstore during the day and at a coffee shop on weekends. One week last month Iris worked 10 hours at the bookstore and 15 hours at the coffee shop and earned $245. The next week she worked 12 hours at the bookstore and 10 hours at the coffee shop and earned $206. How much money does Iris make per hour at each of her jobs?</p>
+            <p>Iris makes $ <input placeholder='0' class='text' pattern="[0-9]" type="text" id="q8"> per hour and $ <input placeholder='0' type="text" id="q8p2" class="text"> per hour at the coffee shop.</p>
+            <button id='btn-eight' class="next-btn">Next</button>
+        </div>
+        <div class="question" id="question9" hidden>
+            <h2>Question 9:</h2>
+            <p>Jacqueline is twice as old as Bill. Twenty-two years ago, she was three times as old as Bill. Find their present ages</p>
+            <p>Jacqueline is <input placeholder='0' class='text' type="text" id="q9"> years old and Bill is <input placeholder='0' type="text" id="q9p2" class="text"> years old.</p>
+            <button id='btn-nine' class="next-btn">Next</button>
+        </div>
+        <div class="question" id="question10" hidden>
+            <h2>Question 10:</h2>
+            <p>The sum of the present ages of a James and his father is 56. In fourteen years, the father will be twice as old as James. Find their present ages</p>
+            <p>James is <input placeholder='0' class='text' type="text" id="q10"> years old and his father is <input placeholder='0' type="text" id="q10p2" class="text"> years old.</p>
+            <button id='btn-ten' class="next-btn">Next</button>
+        </div>
+        <div class="question" id="question11" hidden>
+            <h2>Question 11:</h2>
+            <p>The total value of 24 coins consisting of nickels and dimes is $1.70. How many of each coin are there?</p>
+            <p>There are <input placeholder='0' class='text' type="text" id="q11"> dimes and <input placeholder='0' type="text" id="q11p2" class="text"> nickels.</p>
+            <button id='btn-eleven' class="next-btn">Next</button>
+        </div>
+        <div class="question" id="question12" hidden>
+            <h2>Question 12:</h2>
+            <p>Richard has 57 nickels and quarters. If Richard has $7.25, how many nickels and quarters does he have?</p>
+            <p>Richard has <input placeholder='0' class='text' type="text" id="q12"> quarters and <input placeholder='0' type="text" id="q12p2" class="text"> nickels</p>
+            <button id='btn-twelve' class="next-btn">Next</button>
+        </div>
+        <div class="question" id="question13" hidden>
+            <h2>Question 13:</h2>
+            <p>Amber cleaned under her sofa cushions and found a bunch of pennies and nickels totaling $1.23. If the total number of pennies was six more than four times the number of nickels, how many of each type of coin did Amber find?</p>
+            <p>Amber found <input placeholder='0' class='text' type="text" id="q13"> pennies and <input placeholder='0' type="text" id="q13p2" class="text"> nickels.</p>
+            <button id='btn-thirteen' class="next-btn">Next</button>
+        </div>
+        <div class="question" id="question14" hidden>
+            <h2>Question 14:</h2>
+            <p>Elliot wants to make one quart of 2% fat milk shakes to share with his friends. He has 1% fat milk and 4% fat milk in his refrigerator. How much of each kind of milk does he need to make his 1 quart of milk shakes?</p>
+            <p>Elliot needs to use <input placeholder='0' class='text' type="text" id="q14" pattern="[0-9]" > of a quart of 1% fat milk and <input placeholder='0' type="text" id="q14p2" class="text"> of a quart of 4% milk.</p>
+            <button id='btn-fourteen' class="next-btn">Next</button>
+        </div>
+        <div class="question" id="question15" hidden>
+            <h2>Question 15:</h2>
+            <p>A nurse has a 30% antibacterial solution and a 65% antibacterial solution. He needs to make 35 gallons of a 45% antibacterial solution. How much of the 30% and 65% solutions must he mix?</p>
+            <p>The nurse must mix <input placeholder='0' class='text' type="text" id="q15"> gallons of the 30% solution and <input placeholder='0' type="text" id="q15p2" class="text"> gallons of the 65% solution.</p>
+            <button id='btn-fifteen' class="next-btn">Next</button>
+        </div>
+        <div class="question" id="question16" hidden>
+            <h2>Question 16:</h2>
+            <p>Darin works in the university library during the day and in the computer lab at night. He worked for 5 hours in the library and 12 hours in the computer lab and earned $165.50. The next week he worked for 10 hours in the library and 15 hours in the computer lab and earned $250.00. How much money per hour does Darin make at each job?</p>
+            <p>Darin makes $ <input class='text' type="text" id="q16" placeholder="0.00"> per hour at the library and $ <input type="text" id="q16p2" class="text" placeholder="0.00"> per hour at the computer lab.</p>
+            <button id='btn-sixteen' class="next-btn">Next</button>
+        </div>
+        <div class="question" id="question17" hidden>
+            <h2>Question 17:</h2>
+            <p>Rob works at the grocery store for 30 hours and another 10 hours of overtime and earns $450. In another week, Rob works 35 hours and another 5 hours of overtime and earns $425. How much does Rob make per hour of “regular” work and for his “overtime” work if his employer pays him a different hourly wage for each?</p>
+            <p>Rob earns $ <input placeholder='0' class='text' type="text" id="q17"> per hour of regular work and $ <input placeholder='0' type="text" id="q17p2" class="text"> per hour of overtime work.</p>
+            <button id='btn-seventeen' class="next-btn">Next</button>
+        </div>
+        <div class="question" id="question18" hidden>
+            <h2>Question 18:</h2>
+            <p>Melissa has $5.45 in quarters and dimes. She as a total of 38 coins. How many of each coin does he have?</p>
+            <p>Melissa has <input class='text' type="text" id="q18" placeholder="0"> quarters and <input type="text" id="q18p2" class="text" placeholder="0"> dimes</p>
+            <button id='btn-eighteen' class="next-btn">Next</button>
+        </div>
+        <div class="question" id="question19" hidden>
+            <h2>Question 19:</h2>
+            <p>Gaby is 4 years older than her sister Maria. In 5 years, Gaby will be 1 ½ times as old as Maria. How old are they now?</p>
+            <p>Maria is <input class='text' type="text" id="q19" placeholder="0"> years old and Gaby is <input type="text" id="q19p2" class="text" placeholder="0"> years old</p>
+            <button id='btn-nineteen' class="next-btn">Next</button>
+        </div>
+        <div class="question" id="question20" hidden>
+            <h2>Question 20:</h2>
+            <p>Daniel has $2.23 in a coin jar. The jar contains only nickels and pennies. If the jar contains 139 coins, how many of each coin is in the jar.</p>
+            <p>There are <input class='text' type="text" id="q20" placeholder="0"> nickels and <input type="text" id="q20p2" class="text" placeholder="0"> pennies.</p>
+            <button id="btn-twenty" class="next-btn">Submit</button>
+        </div>
+
+        <div class="feedback-container" id="correct-feedback" hidden>
+            <p>Correct! +100 points</p>
+            <p>Your total points: <span id="total-points">0</span></p>
+            <button id='cont1' class="continue">Continue</button>
+        </div>
+        <div class="feedback-container" id="wrong-feedback" hidden>
+            <p>Wrong!</p>
+            <p>Your total points: <span id="total-point">0</span></p>
+            <button id='cont2' class="continue">Continue</button>
+        </div>
+        <div id="final" hidden>
+            <p id="scoring"></p>
+            <p class='weight' id="final-score"></p>
+            <p>Please click the provided link and send the default email to report your results: <a id='mail' href="">click here</a></p>
+            <p class='weight'>Thank you for taking this quiz!</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
